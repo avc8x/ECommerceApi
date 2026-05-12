@@ -1,0 +1,15 @@
+C:\Users\muha1\ECommerceApi\src\ECommerceApi.Application\bin\Debug\net10.0\ECommerceApi.Application.deps.json
+C:\Users\muha1\ECommerceApi\src\ECommerceApi.Application\bin\Debug\net10.0\ECommerceApi.Application.dll
+C:\Users\muha1\ECommerceApi\src\ECommerceApi.Application\bin\Debug\net10.0\ECommerceApi.Application.pdb
+C:\Users\muha1\ECommerceApi\src\ECommerceApi.Application\bin\Debug\net10.0\ECommerceApi.Domain.dll
+C:\Users\muha1\ECommerceApi\src\ECommerceApi.Application\bin\Debug\net10.0\ECommerceApi.Domain.pdb
+C:\Users\muha1\ECommerceApi\src\ECommerceApi.Application\obj\Debug\net10.0\ECommerceApi.Application.csproj.AssemblyReference.cache
+C:\Users\muha1\ECommerceApi\src\ECommerceApi.Application\obj\Debug\net10.0\ECommerceApi.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\muha1\ECommerceApi\src\ECommerceApi.Application\obj\Debug\net10.0\ECommerceApi.Application.AssemblyInfoInputs.cache
+C:\Users\muha1\ECommerceApi\src\ECommerceApi.Application\obj\Debug\net10.0\ECommerceApi.Application.AssemblyInfo.cs
+C:\Users\muha1\ECommerceApi\src\ECommerceApi.Application\obj\Debug\net10.0\ECommerceApi.Application.csproj.CoreCompileInputs.cache
+C:\Users\muha1\ECommerceApi\src\ECommerceApi.Application\obj\Debug\net10.0\ECommerc.BFAC6637.Up2Date
+C:\Users\muha1\ECommerceApi\src\ECommerceApi.Application\obj\Debug\net10.0\ECommerceApi.Application.dll
+C:\Users\muha1\ECommerceApi\src\ECommerceApi.Application\obj\Debug\net10.0\refint\ECommerceApi.Application.dll
+C:\Users\muha1\ECommerceApi\src\ECommerceApi.Application\obj\Debug\net10.0\ECommerceApi.Application.pdb
+C:\Users\muha1\ECommerceApi\src\ECommerceApi.Application\obj\Debug\net10.0\ref\ECommerceApi.Application.dll
