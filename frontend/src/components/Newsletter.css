@@ -2,35 +2,38 @@
   background: var(--white);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
-  padding: 40px;
+  padding: 32px 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 32px;
+  gap: 24px;
   flex-wrap: wrap;
 }
 .newsletter-logo {
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 900;
   letter-spacing: 3px;
   color: var(--text);
 }
-.newsletter-text h3 { font-size: 20px; font-weight: 700; margin-bottom: 4px; }
-.newsletter-text p  { font-size: 13px; color: var(--muted); }
+.newsletter-text h3 { font-size: 18px; font-weight: 700; margin-bottom: 4px; }
+.newsletter-text p  { font-size: 12px; color: var(--muted); }
 .newsletter-form {
   display: flex;
   border: 1.5px solid var(--border);
   border-radius: 6px;
   overflow: hidden;
   transition: border-color .2s;
+  width: 100%;
+  max-width: 380px;
 }
 .newsletter-form:focus-within { border-color: var(--teal); }
 .newsletter-form input {
   border: none;
-  padding: 11px 18px;
+  padding: 10px 14px;
   font-family: inherit;
   font-size: 13px;
-  width: 240px;
+  flex: 1;
+  min-width: 0;
   outline: none;
   color: var(--text);
 }
@@ -38,10 +41,18 @@
   background: var(--teal);
   color: #fff;
   border: none;
-  padding: 11px 26px;
+  padding: 10px 20px;
   font-size: 13px;
   font-weight: 600;
+  white-space: nowrap;
   transition: background .2s;
 }
 .newsletter-form button:hover { background: var(--teal-dark); }
 .newsletter-thanks { color: var(--teal); font-weight: 600; font-size: 14px; }
+
+@media (max-width: 600px) {
+  .newsletter { padding: 24px 16px; }
+  .newsletter-logo { font-size: 22px; }
+  .newsletter-text h3 { font-size: 16px; }
+  .newsletter-form { max-width: 100%; }
+}

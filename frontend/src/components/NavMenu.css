@@ -3,22 +3,24 @@
   border-bottom: 2px solid var(--teal);
   display: flex;
   align-items: stretch;
-  padding: 0 40px;
+  padding: 0 16px;
   position: relative;
+  overflow-x: auto;
 }
-.cat-wrap { position: relative; }
+.cat-wrap { position: relative; flex-shrink: 0; }
 .cat-btn {
   background: var(--teal);
   color: #fff;
   border: none;
-  padding: 13px 22px;
+  padding: 11px 16px;
   font-size: 13px;
   font-weight: 600;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   height: 100%;
   transition: background .2s;
+  white-space: nowrap;
 }
 .cat-btn:hover { background: var(--teal-dark); }
 .hamburger { font-size: 16px; }
@@ -26,20 +28,22 @@
   position: absolute;
   top: 100%;
   left: 0;
-  width: 240px;
+  width: 220px;
   background: var(--white);
   border: 1px solid var(--border);
   border-top: 2px solid var(--teal);
   box-shadow: 0 8px 32px rgba(0,0,0,.12);
   z-index: 200;
   animation: slideIn .15s ease;
+  max-height: 60vh;
+  overflow-y: auto;
 }
 .cat-dropdown ul { list-style: none; padding: 6px 0; }
 .cat-dropdown ul li a {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 10px 20px;
+  padding: 10px 16px;
   font-size: 13px;
   color: var(--text);
   transition: background .15s;
@@ -59,13 +63,20 @@
 .navmenu-links {
   list-style: none;
   display: flex;
+  overflow-x: auto;
 }
 .navmenu-links li a {
   display: block;
-  padding: 13px 18px;
-  font-size: 13px;
+  padding: 11px 14px;
+  font-size: 12px;
   color: var(--text);
   transition: color .2s;
   white-space: nowrap;
 }
 .navmenu-links li a:hover { color: var(--teal); }
+
+@media (max-width: 600px) {
+  .navmenu { padding: 0 8px; }
+  .cat-btn { padding: 10px 12px; font-size: 12px; }
+  .navmenu-links li a { padding: 10px 10px; font-size: 11px; }
+}
