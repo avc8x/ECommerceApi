@@ -1,9 +1,7 @@
 [build]
-builder = "NIXPACKS"
-buildCommand = "dotnet restore ECommerceApi.sln && dotnet publish src/ECommerceApi.API/ECommerceApi.API.csproj -c Release -o out"
+builder = "DOCKERFILE"
+dockerfilePath = "Dockerfile"
 
 [deploy]
-startCommand = "dotnet out/ECommerceApi.API.dll"
-healthcheckPath = "/swagger"
-healthcheckTimeout = 300
+startCommand = "dotnet ECommerceApi.API.dll"
 restartPolicyType = "ON_FAILURE"
