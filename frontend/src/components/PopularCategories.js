@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './PopularCategories.css';
 
 const ICONS = {
@@ -25,22 +25,33 @@ const DEMO = [
 ];
 
 export default function PopularCategories({ items }) {
+  const [selected, setSelected] = useState(null);
   const data = items.length > 0 ? items : DEMO;
 
   return (
     <section className="popular-section">
       <div className="section-header">
         <h2 className="section-title">Popular Categories</h2>
-        <a href="#" className="view-all">View All &#8594;</a>
+        <a href="#" onClick={e => e.preventDefault()} className="view-all">View All &#8594;</a>
       </div>
       <div className="popular-grid">
         {data.map((item, i) => (
-          <a key={item.id || i} href="#" className="pop-card" style={{ animationDelay: `${i * 40}ms` }}>
+          <button
+            key={item.id || i}
+            className={`pop-card ${selected === item.id ? 'pop-card-active' : ''}`}
+            style={{ animationDelay: `${i * 40}ms` }}
+            onClick={() => setSelected(selected === item.id ? null : item.id)}
+          >
             <div className="pop-icon">{getIcon(item.title)}</div>
             <p className="pop-title">{item.title}</p>
-          </a>
+          </button>
         ))}
       </div>
+      {selected && (
+        <p className="cat-selected">
+          ✅ {data.find(d => d.id === selected)?.title} selected
+        </p>
+      )}
     </section>
   );
 }

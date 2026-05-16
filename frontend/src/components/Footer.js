@@ -2,6 +2,8 @@ import React from 'react';
 import './Footer.css';
 
 export default function Footer() {
+  const handleLink = (e) => e.preventDefault();
+
   return (
     <footer className="footer">
       <div className="footer-grid">
@@ -10,15 +12,15 @@ export default function Footer() {
           <p>Your premier destination for online shopping, where we bring together quality and variety in one place. We always strive to offer the best products at the best prices.</p>
           <h5>Shop on the go</h5>
           <div className="store-btns">
-            <a href="#" className="store-btn">▶ Google Play</a>
-            <a href="#" className="store-btn"> App Store</a>
+            <a href="#" onClick={handleLink} className="store-btn">▶ Google Play</a>
+            <a href="#" onClick={handleLink} className="store-btn"> App Store</a>
           </div>
         </div>
         <div className="footer-col">
           <h4>Join Us</h4>
           <ul>
             {['Become a Vendor','For Delivery Drivers','Stores List','Privacy Policy'].map(l =>
-              <li key={l}><a href="#">{l}</a></li>
+              <li key={l}><a href="#" onClick={handleLink}>{l}</a></li>
             )}
           </ul>
         </div>
@@ -26,7 +28,7 @@ export default function Footer() {
           <h4>Helps</h4>
           <ul>
             {['Contact','Faqs','Terms & Condition','Privacy Policy'].map(l =>
-              <li key={l}><a href="#">{l}</a></li>
+              <li key={l}><a href="#" onClick={handleLink}>{l}</a></li>
             )}
           </ul>
         </div>
@@ -34,7 +36,7 @@ export default function Footer() {
           <h4>Account</h4>
           <ul>
             {['My Account','Order History','Wishlist','Account Settings'].map(l =>
-              <li key={l}><a href="#">{l}</a></li>
+              <li key={l}><a href="#" onClick={handleLink}>{l}</a></li>
             )}
           </ul>
         </div>
@@ -42,7 +44,7 @@ export default function Footer() {
 
       <div className="footer-bottom">
         <div className="social-links">
-          {['f','t','p','in'].map(s => <a key={s} href="#">{s}</a>)}
+          {['f','t','p','in'].map(s => <a key={s} href="#" onClick={handleLink}>{s}</a>)}
         </div>
         <span>eCommerce &copy; 2025. All Rights Reserved</span>
         <div className="payment-icons">

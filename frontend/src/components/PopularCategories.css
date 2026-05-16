@@ -22,6 +22,10 @@
   gap: 4px;
   transition: gap .2s;
   white-space: nowrap;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
 }
 .view-all:hover { gap: 8px; }
 .popular-grid {
@@ -38,11 +42,18 @@
   animation: fadeUp .4s ease both;
   background: var(--white);
   display: block;
+  cursor: pointer;
+  width: 100%;
+  font-family: inherit;
 }
 .pop-card:hover {
   border-color: var(--teal);
   box-shadow: var(--shadow-hover);
   transform: translateY(-3px);
+}
+.pop-card-active {
+  border-color: var(--teal);
+  background: var(--teal-light);
 }
 .pop-icon {
   font-size: 30px;
@@ -54,6 +65,13 @@
   font-weight: 500;
   color: var(--text);
   line-height: 1.4;
+}
+.cat-selected {
+  margin-top: 16px;
+  color: var(--teal);
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
 }
 
 @media (max-width: 480px) {

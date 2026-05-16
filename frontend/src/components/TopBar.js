@@ -6,9 +6,9 @@ export default function TopBar() {
     <div className="topbar">
       <span className="topbar-left">📍 Store Location</span>
       <div className="topbar-right">
-        <a href="#">USD 🇺🇸</a>
-        <a href="#">Eng</a>
-        <a href="#">Sign In / Sign Up</a>
+        <a href="#" onClick={(e) => e.preventDefault()}>USD 🇺🇸</a>
+        <a href="#" onClick={(e) => e.preventDefault()}>Eng</a>
+        <a href="#" onClick={(e) => e.preventDefault()}>Sign In / Sign Up</a>
       </div>
     </div>
   );
